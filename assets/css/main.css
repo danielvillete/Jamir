@@ -955,6 +955,111 @@ section,
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
+/* Basic Reset */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  position: absolute; /* Position it relative to the modal content */
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color:red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Icon Boxes */
+.icon-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.icon-box i {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .icon-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-xl-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+
+  .icon-box h4 {
+    font-size: 16px;
+  }
+
+  .icon-box p {
+    font-size: 12px;
+  }
+}
+
 .why-us .why-box {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -980,6 +1085,7 @@ section,
   color: var(--contrast-color);
   transition: all ease-in-out 0.4s;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .why-us .why-box .more-btn i {
