@@ -35,7 +35,8 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="X9RkrEVq"></script>
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -96,7 +97,7 @@
             <p data-aos="fade-up" data-aos-delay="100"> Aims to provide professional, affordable, and quality veterinary services.</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <a href="#book-a-table" class="btn-get-started">Book Appointment</a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href="/assets/img/vid1.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
@@ -151,20 +152,16 @@
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section light-background">
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
               <h3>Why Choose JVC?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Professional Pet Care. Vaccination. Deworming. Consultation. Viral antigen testing. Microscopy. Surgeries. Complete Blood Count. Small animal companion animal Medicine
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                <a class="more-btn" id="learnMoreBtn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div><!-- End Why Box -->
@@ -204,7 +201,28 @@
       </div>
 
     </section><!-- /Why Us Section -->
-
+    <!-- Modal Popup -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Why Us?</h1>
+        <p>
+          Here at <b>Jamir Veterinary Clinic</b>, we are dedicated to providing exceptional care for your beloved pets. Our comprehensive services ensure that every aspect of your pet’s health is addressed with the utmost professionalism and compassion. Here’s why you should choose us:
+          <ul>
+            <li><b>Professional Pet Care:</b> Our experienced veterinarians and staff offer compassionate, high-quality care tailored to the unique needs of each pet.</li>
+            <li><b>Vaccination:</b> We provide a complete range of vaccinations to protect your pet from harmful diseases and keep them healthy.</li>
+            <li><b>Deworming:</b> Regular deworming services help ensure that your pet stays free from intestinal parasites and enjoys a healthy, happy life.</li>
+            <li><b>Consultation:</b> Our thorough consultations cover all aspects of your pet’s health, including nutrition, behavior, and preventive care.</li>
+            <li><b>Viral Antigen Testing:</b> We use advanced testing to detect viral infections early, ensuring prompt and effective treatment.</li>
+            <li><b>Microscopy:</b> Our state-of-the-art microscopy services aid in accurate diagnostics and effective treatment planning.</li>
+            <li><b>Surgeries:</b> Whether routine or emergency, our skilled surgeons perform procedures with the highest precision and care.</li>
+            <li><b>Complete Blood Count (CBC):</b> We conduct comprehensive blood tests to monitor your pet’s overall health and detect any underlying issues.</li>
+            <li><b>Small Animal and Companion Animal Medicine:</b> Specializing in small and companion animals, we offer expert care and treatment plans tailored to the specific needs of your furry friends.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
@@ -661,13 +679,12 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Contact</h2>
         <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      <div class="container">
         <div class="mb-5">
           <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15454.242445079808!2d120.9255006!3d14.4524673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d302a8edbf1b%3A0x2f17e891934ebb0e!2sJamir%20Veterinary%20Clinic!5e0!3m2!1sen!2sph!4v1721106989754!5m2!1sen!2sph" frameborder="0" allowfullscreen=""></iframe>
         </div><!-- End Google Maps -->
@@ -675,7 +692,7 @@
         <div class="row gy-4">
 
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
@@ -685,7 +702,7 @@
           </div><!-- End Info Item -->
 
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
@@ -695,7 +712,7 @@
           </div><!-- End Info Item -->
 
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
@@ -705,7 +722,7 @@
           </div><!-- End Info Item -->
 
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+            <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-clock flex-shrink-0"></i>
               <div>
                 <h3>Opening Hours</h3>
@@ -776,7 +793,8 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Jamir Veterinary Clinic.</strong> <span>All Rights Reserved.</span></p>
       <div class="credits">
-        Designed with <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed with <a href="https://bootstrapmade.com/">BootstrapMade</a><br>
+        Edited by Daniel Villete
       </div>
     </div>
 
