@@ -173,4 +173,25 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById('learnMoreBtn');
+    var span = document.getElementsByClassName('close')[0];
+  
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = 'block';
+    }
+  
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = 'none';
+    }
+  
+    // Ensure clicking outside of modal does not close it
+    window.onclick = function(event) {
+      // Nothing to do here, preventing closure by outside click
+    }
+  });
+  
 })();
