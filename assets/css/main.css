@@ -587,6 +587,11 @@ h6 {
   font-size: 13px;
 }
 
+.footer .icon {
+  width: 72px;  /* Set the width you prefer */
+  height: 52px; /* Set the height you prefer */
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1439,6 +1444,11 @@ body, h1, p {
 /*--------------------------------------------------------------
 # Book Appointment Section
 --------------------------------------------------------------*/
+.error-message {
+  color: red;
+  display: none;
+}
+
 .book-a-table .reservation-img {
   min-height: 500px;
   background-size: cover;
@@ -1464,6 +1474,8 @@ body, h1, p {
 .book-a-table .php-email-form input[type=number],
 .book-a-table .php-email-form input[type=date],
 .book-a-table .php-email-form input[type=time],
+.book-a-table .php-email-form input[type=type],
+.book-a-table .php-email-form input[type=pet],
 .book-a-table .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1479,6 +1491,8 @@ body, h1, p {
 .book-a-table .php-email-form input[type=number]:focus,
 .book-a-table .php-email-form input[type=date]:focus,
 .book-a-table .php-email-form input[type=time]:focus,
+.book-a-table .php-email-form input[type=type]:focus,
+.book-a-table .php-email-form input[type=pet]:focus,
 .book-a-table .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
@@ -1488,6 +1502,8 @@ body, h1, p {
 .book-a-table .php-email-form input[type=number]::placeholder,
 .book-a-table .php-email-form input[type=date]::placeholder,
 .book-a-table .php-email-form input[type=time]::placeholder,
+.book-a-table .php-email-form input[type=type]::placeholder,
+.book-a-table .php-email-form input[type=pet]::placeholder,
 .book-a-table .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
@@ -1500,6 +1516,7 @@ body, h1, p {
   transition: 0.4s;
   border-radius: 4px;
 }
+
 
 .book-a-table .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
